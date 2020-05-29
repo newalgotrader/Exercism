@@ -1,2 +1,5 @@
 .exercism
 build
+*.out
+*.out.*
+out
