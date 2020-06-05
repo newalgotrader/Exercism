@@ -1,0 +1,16 @@
+#include "two_fer.h"
+#include <string>
+
+using std::string;
+
+namespace two_fer
+{
+  string two_fer() {
+    return two_fer("you");
+  }
+
+  string two_fer(string name) {
+    return "One for " + name + ", one for me.";
+  }
+} // namespace two_fer
+
