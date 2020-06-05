@@ -9,7 +9,7 @@ namespace two_fer
     return two_fer("you");
   }
 
-  string two_fer(string name) {
+  string two_fer(const string &name) {
     return "One for " + name + ", one for me.";
   }
 } // namespace two_fer

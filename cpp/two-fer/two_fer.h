@@ -6,7 +6,7 @@
 namespace two_fer
 {
   std::string two_fer();
-  std::string two_fer(std::string name);
+  std::string two_fer(const std::string &name);
 
 } // namespace two_fer
 
