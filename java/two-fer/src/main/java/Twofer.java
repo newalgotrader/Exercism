@@ -1,9 +1,11 @@
+import java.util.Objects;
+
 public class Twofer {
     public String twofer(String name) {
-      if (name == null) {
+      if (Objects.isNull(name)) {
         name = "you";
       }
 
-      return String.format("One for %s, one for me.", name);
+      return "One for " + name + ", one for me.";
     }
 }
