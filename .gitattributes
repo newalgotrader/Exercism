@@ -1,1 +1,4 @@
- cpp/*/test/catch.hpp linguist-vendored
+cpp/*/test/catch.hpp linguist-vendored
+c/*/test/vendor/unity.h linguist-vendored
+c/*/test/vendor/unity.c linguist-vendored
+c/*/test/vendor/unity_internals.h linguist-vendored
