@@ -1,39 +1,15 @@
 #include "armstrong_numbers.h"
-
-static int number_of_digits(int);
-static int power(int, int);
+#include <math.h>
 
 int is_armstrong_number(int candidate) {
   int sum = 0;
   int result = candidate;
-  int digits = number_of_digits(candidate);
+  int digits = floor(log10(candidate)) + 1;
 
   while (result > 0) {
-    sum += power(result % 10, digits);
+    sum += round(pow(result % 10, digits));
     result /= 10;
   }
 
   return sum == candidate;
-}
-
-static int number_of_digits(int number) {
-  int digits = 0;
-
-  while(number > 0) {
-    number /= 10;
-    ++digits;
-  }
-
-  return digits;
-}
-
-static int power(int base, int power) {
-  int result = 1;
-
-  while(power) {
-    result *= base;
-    --power;
-  }
-
-  return result;
 }
